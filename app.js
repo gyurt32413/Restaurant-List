@@ -4,6 +4,7 @@ const app = express()
 
 const port = 3000
 
+
 //require express-handlebars used here
 const exphbs = require('express-handlebars')
 
@@ -37,6 +38,7 @@ app.get('/restaurants/:restaurant_id', (req, res) => {
 app.get('/search', (req, res) => {
   const keyword = req.query.keyword
   const filterRestaurant = restaurantList.results.filter(restaurant => restaurant.name.toLowerCase().includes(keyword.toLowerCase().trim()) || restaurant.category.toLowerCase().includes(keyword.toLowerCase().trim()))
+
 
   res.render('index', { restaurant: filterRestaurant, keyword: keyword })
 })
