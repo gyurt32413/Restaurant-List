@@ -14,7 +14,7 @@
 1. 確認使用環境已有node.js及npm
 2. 下載(clone)此專案
     ```
-    git clone https://github.com/AKICHEN27/restaurant_list.git
+    git clone https://github.com/gyurt32413/Restaurant-List
     ```
 3. 透過終端機安裝npm套件
     ```
